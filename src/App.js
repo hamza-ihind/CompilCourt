@@ -1,17 +1,20 @@
-import Navbar from './Components/Navbar/Navbar.component';
-import Hero from './Components/Hero/Hero.component';
-import Levels from './Components/Levels/Levels.component'
-import Intro from './Components/Intro/Intro.component';
+import './App.scss';
 
-const App = () => {
-  return (
-    <div className="App">
-      < Navbar />
-      < Hero />
-      < Intro />
-      < Levels />
-    </div>
-  );
+import { About, Testimonial, Work, Skills, Header, Footer } from './container';
+import { Navbar } from './components';
+
+function App() {
+	return (
+		<div className='app'>
+			<Navbar />
+			<Header />
+			<About />
+			<Work />
+			<Skills />
+			<Testimonial />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
