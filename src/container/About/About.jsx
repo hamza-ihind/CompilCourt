@@ -1,65 +1,82 @@
 // import { useState, useEffect } from 'react'
 
-import { motion } from 'framer-motion'
-import { AppWrap, MotionWrap } from '../../wrapper'
-import './About.scss'
-// import { urlFor, client } from '../../client'
-import { images } from '../../constants'
+import { motion } from "framer-motion";
+import { AppWrap, MotionWrap } from "../../wrapper";
+import "./About.scss";
 
-// Temporary DataBase
-const abouts = [
-    { title: 'Front-End Developer', description: 'I am a Front-End Developer with a full understanding of the web development process from inception to deployment..', imgUrl: images.reactjs },
-    { title: 'Back-End Developer', description: 'I am a Back-End Developer who tend to focus on smaller parts of the whole, such as applications and programs', imgUrl: images.nodejs },
-    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer, I create the user interface for an app, website, or other interactive media.', imgUrl: images.uiux }
-]
+import { images } from "../../constants";
 
 const About = () => {
+  return (
+    <>
 
-    return (
-        <>
-            <p className='p-text p-desc'>[ Who I am ?? ]</p>
-            <h2 className='head-text'>
-                a <span>Human-First</span>
-                <br />
-                a <span>Full-stack Web developer</span>
-            </h2>
+      {/* <img src={images.pattern} alt="pattern" className="pattern" />
+      <img src={images.pattern} alt="pattern" className="pattern-rotated" /> */}
 
-            <img src={images.pattern} alt="pattern" className='pattern' />
-            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
+      <div className="aboutus">
+        <h1 className="aboutus__title">ABOUT US</h1>
+        <div className="aboutus__hero">
+          <h4>WE LIVE BY THE CODE OF PASSION</h4>
+          <hr className="line" />
+        </div>
+      </div>
 
-            <div className='app__flex'>
-                <div className='app__profiles'>
-                    {
-                        abouts.map((about, index) => (
-                            <motion.div
-                                whileInView={{ opacity: 1 }}
-                                whileHover={{ scale: 1.1 }}
-                                transition={{ duration: 0.4, type: 'tween' }}
-                                className='app__profile-item'
-                                key={about.title + index}
-                            >
-                                <img src={about.imgUrl} alt={about.title} />
+      <div className="app__flex">
+        <div className="app__us">
+          <div className="app__us__content">
+            <h2 className="app__us__content-title"> WHO ARE WE ?? </h2>
+            <p className="app__us__content-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              numquam. Vitae, totam laudantium animi culpa numquam quibusdam
+              nesciunt. Alias ducimus omnis facilis culpa commodi adipisci eius
+              nihil assumenda nobis voluptatibus! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Totam, numquam. Vitae, totam
+              laudantium animi culpa numquam quibusdam nesciunt. Alias ducimus
+              omnis facilis culpa commodi adipisci eius nihil assumenda nobis
+              voluptatibus!
+            </p>
+          </div>
 
-                                <h2 className='bold-text' style={{ marginTop: 20 }}>
-                                    {about.title}
-                                </h2>
+          <hr className="v-line" />
 
-                                <p className='p-text' style={{ marginTop: 10 }}>
-                                    {about.description}
-                                </p>
-
-                            </motion.div>
-                        ))
-                    }
-                </div>
+          <div className="app__us__stats">
+            <div className="app__us__stats-card">
+              <h4 className="app__us__stats-card-title">10,000+</h4>
+              <p className="app__us__stats-card-p">students</p>
             </div>
+            <div className="app__us__stats-card">
+              <h4 className="app__us__stats-card-title">Since 2021</h4>
+              <p className="app__us__stats-card-p">Founded</p>
+            </div>
+            <div className="app__us__stats-card">
+              <h4 className="app__us__stats-card-title">10 Students</h4>
+              <p className="app__us__stats-card-p">Writing with LaTeX</p>
+            </div>
+          </div>
 
-        </>
-    )
-}
+          <hr className="v-line" />
+
+          <div className="app__us__content">
+            <h2 className="app__us__content-title"> Mission & Vision </h2>
+            <p className="app__us__content-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              numquam. Vitae, totam laudantium animi culpa numquam quibusdam
+              nesciunt. Alias ducimus omnis facilis culpa commodi adipisci eius
+              nihil assumenda nobis voluptatibus! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Totam, numquam. Vitae, totam
+              laudantium animi culpa numquam quibusdam nesciunt. Alias ducimus
+              omnis facilis culpa commodi adipisci eius nihil assumenda nobis
+              voluptatibus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default AppWrap(
-    MotionWrap(About, 'app__about'),
-    'about',
-    'app__whitebg'
-)
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);

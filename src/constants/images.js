@@ -33,7 +33,7 @@ import profile2 from '../assets/profile2.png';
 import bahti from '../assets/bahti.jpeg';
 import hassan from '../assets/hassan.jpg';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo_Fsf.png';
 import pattern from '../assets/pattern.svg';
 import quote from '../assets/quote.png';
 

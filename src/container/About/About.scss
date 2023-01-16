@@ -3,42 +3,87 @@
 	width: 100%;
 	flex-direction: column;
 	gap: 20px;
+	z-index: 1000;
 
 	.p-desc {
 		font-size: 1.2rem;
 	}
 }
 
-.app__profiles {
-	display: flex;
-	flex: 1;
-	justify-content: center;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	margin-top: 2rem;
-}
-
-.app__profile-item {
-	width: 240px;
+.aboutus{
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	margin: 2rem 3.5rem;
+	width: 100%;
+	gap: 2vw;
 
-	img {
-		width: 100%;
-		height: 170px;
-		border-radius: 15px;
-		object-fit: cover;
+	&__title{
+		display: flex;
+		flex: 2;
+		justify-content: center;
+		align-items: center;
+		font-size: 8vw;
 	}
 
-	@media screen and (min-width: 2000px) {
-		width: 370px;
-		margin: 2rem 4rem;
+	&__hero{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		flex: 2;
+		gap: 0.2rem;
+		font-size: 1.5vw;
 
-		img {
-			height: 320px;
+		.line{
+			width: 100%;
+			height: 0.3vh;
+			border-radius: 50px;
+			border: none;
+			background-color: var(--secondary-color);
+		}
+	}
+}
+
+.v-line{
+	width: 4px;
+	background-color: var(--secondary-color);
+	border: none;
+	border-radius: 50px;
+}
+
+.app__us{
+	display: flex;
+	justify-content: space-between;
+	gap: 2vw;
+	height: 50vh;
+
+	&__content{
+		text-align: center;
+		width: 60%;
+		&-title{
+			font-size: 2.2vw;
+			margin-bottom: 1rem;
+		}
+		&-p{
+			font-size: 1.2vw;
+		}
+	}
+
+	&__stats{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		min-width: 17%;
+
+		&-card{
+			//
+			&-title{
+				font-size: 2.5vw;
+			}
+			&-p{
+				font-size: 1.2vw;
+				font-weight: 400;
+			}
 		}
 	}
 }

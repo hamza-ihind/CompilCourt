@@ -6,7 +6,7 @@ const NavigationDots = ({ active }) => {
             {['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item, index) => (
                 <a
                     href={`#${item}`}
-                    style={active === item ? { backgroundColor: "#2c3333" } : {}}
+                    style={active === item ? { backgroundColor: "#052e5a" } : {}}
                     style={{ zIndex: 10 }}
                     key={item + index}
                     className="app__navigation-dot"
