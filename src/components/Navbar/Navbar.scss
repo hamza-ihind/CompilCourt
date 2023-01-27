@@ -3,10 +3,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.6rem 2rem;
-	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(4px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 0.5rem 7rem;
+	backdrop-filter: blur(7.5px);
 	position: fixed;
 	z-index: 15;
 
@@ -14,7 +12,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-left: 50px;
 
 		a{
 			display: flex;
@@ -31,17 +28,16 @@
 		flex: 1;
 		display: flex;
 		justify-content: flex-end;
-		margin-right: 50px;
 		align-items: center;
 		list-style: none;
+		gap: 3rem;
 
 		li {
-			margin: 0 1rem;
 			cursor: pointer;
 			flex-direction: column;
 			display: flex;
 			align-items: center;
-			font-weight: 600;
+			font-weight: 200;
 
 			div {
 				width: 5px;
@@ -53,15 +49,15 @@
 			}
 
 			a {
-				color: var(--secondary-color);
+				color: white;
+				font-size: 1.2rem;
 				text-decoration: none;
 				flex-direction: column;
-				text-transform: uppercase;
 
 				transition: all 0.3s ease-in-out;
 
 				&:hover {
-					color: var(--gray-color);
+					color: var(--primary-color);
 				}
 			}
 

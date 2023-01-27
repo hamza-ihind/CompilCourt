@@ -1,0 +1,44 @@
+.app__hero {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	flex-direction: row;
+
+	&-tag{
+		height: fit-content;
+		width: fit-content;
+		background-color: #30496e60;
+		color: white;
+		font-weight: 200;
+		border-radius: 1rem;
+		padding: 0.6rem 1.5rem;
+	}
+
+	&-img{
+		width: 35vw;
+	}
+
+	&-title{
+		margin-top: 1.5rem;
+		color: white;
+		font-size: 6.5vw;
+		font-weight: 800;
+		letter-spacing: 1px;
+	}
+
+	&-slogan{
+		color: white;
+		font-size: 2vw;
+		font-weight: 250;
+		margin: 2rem 0;
+		letter-spacing: 0.3px;
+	}
+
+	&-buttons{
+		display: flex;
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+}

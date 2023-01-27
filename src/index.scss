@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-	--font-base: 'Poppins', sans-serif;
+	--font-base: 'Outfit', sans-serif;
+
+	--dark-color: #021225;
 
 	--primary-color: #a5c9ca;
 
-	--secondary-color: #052e5a;
+	--secondary-color: #0075F6;
 
 	--lightGray-color: #d0c9c0;
 
-	--black-color: #030303;
+	--gray-color: #262e4d;
 
-	--gray-color: #3c4c85;
+	--brown-color: #363242;
 
-	--brown-color: #46364a;
-
-	--white-color: #b1d7ff;
 }
 
 * {

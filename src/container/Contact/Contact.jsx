@@ -3,9 +3,9 @@ import emailjs from 'emailjs-com'
 
 import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
-import './Footer.scss'
+import './Contact.scss'
 
-const Footer = () => {
+const Contact = () => {
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' })
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
@@ -26,10 +26,7 @@ const Footer = () => {
 
     return (
         <>
-            <h2 className='head-text title-text'><span>Take a coffee</span> & <span>Chat with me</span></h2>
-
-            <img src={images.pattern} alt="pattern" className='pattern' />
-            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
+            <h2 className='head-text title-text'>LOVE TO HEAR FROM YOU, GET IN TOUCH!👋</h2>
 
             <div className='app__footer-cards'>
                 <div className='app__footer-card'>
@@ -70,7 +67,7 @@ const Footer = () => {
 }
 
 export default AppWrap(
-    MotionWrap(Footer, 'app__footer'),
+    MotionWrap(Contact, 'app__footer'),
     'contact',
     'app__whitebg'
 )

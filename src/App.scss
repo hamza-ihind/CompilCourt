@@ -8,7 +8,7 @@
 }
 
 .app__primarybg {
-	background-color: var(--primary-color);
+	background-color: var(--dark-color);
 }
 
 .app__graybg {
@@ -220,5 +220,30 @@
 
 	.copyright {
 		padding: 2rem;
+	}
+}
+
+// buttons
+
+button{
+	font-family: var(--font-base);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem 1.8rem;
+	color: white;
+	border-radius: 1.5rem;
+	font-size: 1.3vw;
+	font-weight: 300;
+}
+
+.button{
+	&-main{
+		border: 0;
+		background-color: var(--secondary-color);
+	}
+	&-stroke{
+		border: 2px solid var(--secondary-color);
+		background: transparent;
 	}
 }
