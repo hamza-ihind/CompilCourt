@@ -18,6 +18,8 @@ const scaleVariants = {
 
 const Hero = () => (
   <div className="app__hero app__flex">
+    <div className="ellipse"></div>
+    <div className="ellipse-2"></div>
     <div className="app__hero-content">
       <div className="app__hero-tag">FSF Presents :</div>
       <h1 className="app__hero-title">Compil'Court</h1>
@@ -30,8 +32,6 @@ const Hero = () => (
       </div>
     </div>
     <img src={images.hero} alt="hero" className="app__hero-img" />
-    <div className="ellipse"></div>
-    <div className="ellipse-2"></div>
   </div>
 );
 

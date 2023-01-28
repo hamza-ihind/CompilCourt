@@ -1,47 +1,46 @@
-import { useState } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+// import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
-import "./Work.scss";
+import "./Levels.scss";
 
-const modules = [
-  {
-    title: "Electrostatique",
-    prof: "Pr. Driss Agliz",
-    level: "CP-1",
-    semester: "S1",
-    imgUrl: images.ensa,
-  },
-  {
-    title: "Electrostatique",
-    prof: "Pr. Driss Agliz",
-    level: "CP-1",
-    semester: "S1",
-    imgUrl: images.ensa,
-  },
-  {
-    title: "Electrostatique",
-    prof: "Pr. Driss Agliz",
-    level: "CP-1",
-    semester: "S1",
-    imgUrl: images.ensa,
-  },
-];
+// const modules = [
+//   {
+//     title: "Electrostatique",
+//     prof: "Pr. Driss Agliz",
+//     level: "CP-1",
+//     semester: "S1",
+//     imgUrl: images.ensa,
+//   },
+//   {
+//     title: "Electrostatique",
+//     prof: "Pr. Driss Agliz",
+//     level: "CP-1",
+//     semester: "S1",
+//     imgUrl: images.ensa,
+//   },
+//   {
+//     title: "Electrostatique",
+//     prof: "Pr. Driss Agliz",
+//     level: "CP-1",
+//     semester: "S1",
+//     imgUrl: images.ensa,
+//   },
+// ];
 
-const semesters = [
-  {
-    level: "CP-1",
-    semester: ["S1", "S2"]
-  }
-]
+// const semesters = [
+//   {
+//     level: "CP-1",
+//     semester: ["S1", "S2"],
+//   },
+// ];
 
-const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("");
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  const [filterLevel, setFilterLevel] = useState([]);
-  const [filterModule, setFilterModule] = useState([]);
+const Levels = () => {
+  // const [activeFilter, setActiveFilter] = useState("");
+  // const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  // const [filterLevel, setFilterLevel] = useState([]);
+  // const [filterModule, setFilterModule] = useState([]);
 
   // const handleSemesterFilter = (item) => {
   //   setActiveFilter(item);
@@ -56,10 +55,7 @@ const Work = () => {
   // };
 
   return (
-    <>
-
-      {console.log(filterLevel)}
-
+    <div className="app__levels">
       <h2 className="head-text">
         Pick your level and start <span> WORKING!💪 </span>
       </h2>
@@ -118,8 +114,12 @@ const Work = () => {
           </div>
         ))}
       </motion.div> */}
-    </>
+    </div>
   );
 };
 
-export default AppWrap(MotionWrap(Work, "app__work"), "work", "app__whitebg");
+export default AppWrap(
+  MotionWrap(Levels, "app__levels"),
+  "levels",
+  "app__primarybg"
+);

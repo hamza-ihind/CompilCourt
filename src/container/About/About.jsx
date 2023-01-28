@@ -13,7 +13,10 @@ const About = () => {
       <div className="ellipse"></div>
       <div className="app__about-content">
         <div className="app__about-content-side">
-          <h3 className="app__about-content-title">✅ Our mission</h3>
+          <div className="app__about-content-title">
+            <h3>Our mission</h3>
+            <div className="div-title"></div>
+          </div>
           <p className="app__about-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis
             quae, eveniet minus corrupti autem ratione reiciendis eos, unde aut
@@ -25,7 +28,10 @@ const About = () => {
         </div>
         <hr className="v-line" />
         <div className="app__about-content-side">
-          <h3 className="app__about-content-title">✔️ Our Values</h3>
+          <div className="app__about-content-title">
+            <h3>Our Values</h3>
+            <div className="div-title"></div>
+          </div>
           <p className="app__about-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis
             quae, eveniet minus corrupti autem ratione reiciendis eos, unde aut
