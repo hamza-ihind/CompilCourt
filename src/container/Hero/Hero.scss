@@ -1,44 +1,68 @@
 .app__hero {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex: 1;
-	flex-direction: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  flex-direction: row;
 
-	&-tag{
-		height: fit-content;
-		width: fit-content;
-		background-color: #30496e60;
-		color: white;
-		font-weight: 200;
-		border-radius: 1rem;
-		padding: 0.6rem 1.5rem;
-	}
+  &-tag {
+    height: fit-content;
+    width: fit-content;
+    background-color: #30496e60;
+    color: white;
+    font-weight: 200;
+    border-radius: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
 
-	&-img{
-		width: 35vw;
-	}
+  &-img {
+    width: 37vw;
+  }
 
-	&-title{
-		margin-top: 1.5rem;
-		color: white;
-		font-size: 6.5vw;
-		font-weight: 800;
-		letter-spacing: 1px;
-	}
+  &-title {
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 6.5vw;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
 
-	&-slogan{
-		color: white;
-		font-size: 2vw;
-		font-weight: 250;
-		margin: 2rem 0;
-		letter-spacing: 0.3px;
-	}
+  &-slogan {
+    color: white;
+    font-size: 2vw;
+    font-weight: 250;
+    margin: 2rem 0;
+    letter-spacing: 0.3px;
+  }
 
-	&-buttons{
-		display: flex;
-		gap: 3rem;
-		margin-top: 3rem;
-	}
+  &-buttons {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+.ellipse {
+  z-index: -1;
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  left: 75vw;
+  top: -10vw;
+
+  background: rgba(0, 69, 246, 0.4);
+  filter: blur(300px);
+}
+
+.ellipse-2 {
+  z-index: -1;
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  left: -25vw;
+  top: -25vw;
+
+  background: #110541;
+  filter: blur(200px);
 }

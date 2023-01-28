@@ -8,75 +8,69 @@ import { images } from "../../constants";
 
 const About = () => {
   return (
-    <>
-
-      {/* <img src={images.pattern} alt="pattern" className="pattern" />
-      <img src={images.pattern} alt="pattern" className="pattern-rotated" /> */}
-
-      <div className="aboutus">
-        <h1 className="aboutus__title">ABOUT US</h1>
-        <div className="aboutus__hero">
-          <h4>WE LIVE BY THE CODE OF PASSION</h4>
-          <hr className="line" />
+    <div className="app__about app__flex">
+      <div className="ellipse-2"></div>
+      <div className="ellipse"></div>
+      <div className="app__about-content">
+        <div className="app__about-content-side">
+          <h3 className="app__about-content-title">✅ Our mission</h3>
+          <p className="app__about-content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis
+            quae, eveniet minus corrupti autem ratione reiciendis eos, unde aut
+            accusantium. Voluptas suscipit impedit maxime ipsam omnis nam odio
+            doloremque cum. Aspernatur praesentium ipsam voluptas temporibus ab
+            ea dolores odit autem, tempora explicabo cumque culpa perferendis
+            in, at sapiente.
+          </p>
+        </div>
+        <hr className="v-line" />
+        <div className="app__about-content-side">
+          <h3 className="app__about-content-title">✔️ Our Values</h3>
+          <p className="app__about-content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis
+            quae, eveniet minus corrupti autem ratione reiciendis eos, unde aut
+            accusantium. Voluptas suscipit impedit maxime ipsam omnis nam odio
+            doloremque cum. Aspernatur praesentium ipsam voluptas temporibus ab
+            ea dolores odit autem, tempora explicabo cumque culpa perferendis
+            in, at sapiente.
+          </p>
         </div>
       </div>
-
-      <div className="app__flex">
-        <div className="app__us">
-          <div className="app__us__content">
-            <h2 className="app__us__content-title"> WHO ARE WE ?? </h2>
-            <p className="app__us__content-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              numquam. Vitae, totam laudantium animi culpa numquam quibusdam
-              nesciunt. Alias ducimus omnis facilis culpa commodi adipisci eius
-              nihil assumenda nobis voluptatibus! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Totam, numquam. Vitae, totam
-              laudantium animi culpa numquam quibusdam nesciunt. Alias ducimus
-              omnis facilis culpa commodi adipisci eius nihil assumenda nobis
-              voluptatibus!
-            </p>
-          </div>
-
-          <hr className="v-line" />
-
-          <div className="app__us__stats">
-            <div className="app__us__stats-card">
-              <h4 className="app__us__stats-card-title">10,000+</h4>
-              <p className="app__us__stats-card-p">students</p>
-            </div>
-            <div className="app__us__stats-card">
-              <h4 className="app__us__stats-card-title">Since 2021</h4>
-              <p className="app__us__stats-card-p">Founded</p>
-            </div>
-            <div className="app__us__stats-card">
-              <h4 className="app__us__stats-card-title">10 Students</h4>
-              <p className="app__us__stats-card-p">Writing with LaTeX</p>
-            </div>
-          </div>
-
-          <hr className="v-line" />
-
-          <div className="app__us__content">
-            <h2 className="app__us__content-title"> Mission & Vision </h2>
-            <p className="app__us__content-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              numquam. Vitae, totam laudantium animi culpa numquam quibusdam
-              nesciunt. Alias ducimus omnis facilis culpa commodi adipisci eius
-              nihil assumenda nobis voluptatibus! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Totam, numquam. Vitae, totam
-              laudantium animi culpa numquam quibusdam nesciunt. Alias ducimus
-              omnis facilis culpa commodi adipisci eius nihil assumenda nobis
-              voluptatibus!
-            </p>
-          </div>
+      <div className="app__about-stats">
+        <div className="app__about-stats-card">
+          <img
+            src={images.student}
+            alt="student"
+            className="app__about-stats-card-img"
+          />
+          <h1 className="app__about-stats-card-title">10,000+</h1>
+          <p className="app__about-stats-card-text">Students</p>
+        </div>
+        <div className="app__about-stats-card">
+          <img
+            src={images.idea}
+            alt="student"
+            className="app__about-stats-card-img"
+          />
+          <h1 className="app__about-stats-card-title">Since 2021</h1>
+          <p className="app__about-stats-card-text">Founded</p>
+        </div>
+        <div className="app__about-stats-card">
+          <img
+            src={images.write}
+            alt="student"
+            className="app__about-stats-card-img"
+          />
+          <h1 className="app__about-stats-card-title">10 Students</h1>
+          <p className="app__about-stats-card-text">Writing with LaTeX</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default AppWrap(
   MotionWrap(About, "app__about"),
   "about",
-  "app__whitebg"
+  "app__primarybg"
 );
