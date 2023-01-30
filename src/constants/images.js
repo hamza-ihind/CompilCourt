@@ -2,13 +2,17 @@ import circle from "../assets/circle.svg";
 import logo from "../assets/Logo_Fsf.png";
 import pattern from "../assets/pattern.svg";
 
-import write from "../assets/write.png";
-import student from "../assets/student.png";
-import idea from "../assets/idea.png";
-
 // illustrations
 
 import hero from "../assets/hero.svg";
+
+// icons
+import write from "../assets/write.png";
+import student from "../assets/student.png";
+import idea from "../assets/idea.png";
+import map from "../assets/map.png";
+import phone from "../assets/phone.png";
+import email from "../assets/email.png";
 
 export default {
   circle,
@@ -18,4 +22,7 @@ export default {
   student,
   idea,
   write,
+  map,
+  phone,
+  email,
 };

@@ -2,9 +2,124 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 90%;
 
   .title-text {
+    font-size: 2.8vw;
     font-weight: 500;
     color: white;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 75vw;
+    margin: 2.5rem 0 1.5rem 0;
+  }
+
+  &-card {
+    color: white;
+    font-weight: 200;
+    font-size: 1.2vw;
+    border: 2px solid #0075f6;
+    border-radius: 20px;
+    width: 27vw;
+    padding: 0.65rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-img {
+      width: 35px;
+    }
+  }
+
+  // Form
+
+  &-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    // background-color: #0075f6;
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    padding: 1rem;
+
+    &-up {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+
+        &-text {
+          margin-left: 6px;
+        }
+
+        &-input {
+          border: none;
+          border-radius: 10px;
+          height: 2.5rem;
+          width: 22.5vw;
+          padding: 0 1rem;
+          background-color: #082a42;
+          color: white;
+          // font properties
+          font-size: 1rem;
+          font-weight: 200;
+          font-family: "Outfit", sans-serif;
+        }
+      }
+    }
+
+    &-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 67%;
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 0.3rem;
+
+        &-text {
+          margin-left: 6px;
+        }
+
+        &-input {
+          border: none;
+          padding: 1rem;
+          border-radius: 10px;
+          height: 10rem;
+          width: 100%;
+          background-color: #082a42;
+          color: white;
+          // font properties
+          font-size: 1rem;
+          font-weight: 200;
+          font-family: "Outfit", sans-serif;
+          // resterictions
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-button {
+      background-color: #85a3bf;
+      color: black;
+      border-radius: 15px;
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+    }
   }
 }
