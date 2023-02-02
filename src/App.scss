@@ -241,10 +241,26 @@ button {
 .button {
   &-main {
     border: 0;
-    background-color: var(--secondary-color);
+    background-color: #85a3bf;
+    color: black;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      background-color: var(--primary-color);
+    }
   }
+
   &-stroke {
     border: 2px solid var(--secondary-color);
     background: transparent;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      background-color: var(--secondary-color);
+    }
   }
 }

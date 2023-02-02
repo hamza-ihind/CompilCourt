@@ -8,9 +8,9 @@ import { images } from "../../constants";
 
 const About = () => {
   return (
-    <div className="app__about app__flex">
-      <div className="ellipse-2"></div>
-      <div className="ellipse"></div>
+    <div className="app__about app__flex app__wrapper">
+      {/* <div className="ellipse-2"></div>
+      <div className="ellipse"></div> */}
       <div className="app__about-content">
         <div className="app__about-content-side">
           <div className="app__about-content-title">

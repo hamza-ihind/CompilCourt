@@ -13,6 +13,7 @@ import idea from "../assets/idea.png";
 import map from "../assets/map.png";
 import phone from "../assets/phone.png";
 import email from "../assets/email.png";
+import analyse from "../assets/analyse.png";
 
 export default {
   circle,
@@ -25,4 +26,5 @@ export default {
   map,
   phone,
   email,
+  analyse,
 };

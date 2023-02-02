@@ -1,119 +1,74 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
+
+import { Modules } from "../../constants/modules";
 import "./Levels.scss";
 
-// const modules = [
-//   {
-//     title: "Electrostatique",
-//     prof: "Pr. Driss Agliz",
-//     level: "CP-1",
-//     semester: "S1",
-//     imgUrl: images.ensa,
-//   },
-//   {
-//     title: "Electrostatique",
-//     prof: "Pr. Driss Agliz",
-//     level: "CP-1",
-//     semester: "S1",
-//     imgUrl: images.ensa,
-//   },
-//   {
-//     title: "Electrostatique",
-//     prof: "Pr. Driss Agliz",
-//     level: "CP-1",
-//     semester: "S1",
-//     imgUrl: images.ensa,
-//   },
-// ];
-
-// const semesters = [
-//   {
-//     level: "CP-1",
-//     semester: ["S1", "S2"],
-//   },
-// ];
-
 const Levels = () => {
-  // const [activeFilter, setActiveFilter] = useState("");
-  // const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  // const [filterLevel, setFilterLevel] = useState([]);
-  // const [filterModule, setFilterModule] = useState([]);
+  const [modules, setModules] = useState([]);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  // const handleSemesterFilter = (item) => {
-  //   setActiveFilter(item);
-  //   setAnimateCard([{ y: 100, opacity: 0 }]);
+  const filterLevel = (level) => {
+    setAnimateCard([{ y: 100, opacity: 0 }]);
 
-  //   setTimeout(() => {
-  //     setAnimateCard([{ y: 0, opacity: 1 }]);
-
-  //     if (item === "All") setFilterSemester(modules);
-  //     else setFilterSemester(module.filter((module) => module.tags.includes(item)));
-  //   }, 300);
-  // };
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+      const updatedLevel = Modules.filter((currentLevel) => {
+        return currentLevel.level === level;
+      });
+      setModules(updatedLevel);
+    }, 420);
+  };
 
   return (
-    <div className="app__levels">
-      <h2 className="head-text">
-        Pick your level and start <span> WORKING!💪 </span>
+    <div className="app__levels app__flex app__wrapper">
+      <h2 className="app__levels-title">
+        Pick your level and start{" "}
+        <span style={{ color: "var(--secondary-color)", fontWeight: 700 }}>
+          WORKING!💪
+          <div className="div-title"></div>
+        </span>
       </h2>
 
-      {/* <img src={images.pattern} alt="pattern" className='pattern' />
-            <img src={images.pattern} alt="pattern" className='pattern-rotated' /> */}
+      <div className="app__levels-buttons">
+        <button className="button-stroke" onClick={() => filterLevel("S1")}>
+          Semestre 1
+        </button>
+        <button className="button-stroke" onClick={() => filterLevel("S2")}>
+          Semestre 2
+        </button>
+        <button className="button-stroke" onClick={() => filterLevel("S3")}>
+          Semestre 3
+        </button>
+        <button className="button-stroke" onClick={() => filterLevel("S4")}>
+          Semestre 4
+        </button>
+      </div>
 
-      {/* <div className="app__work-filter">
-        {[
-          "CP-1",
-          "CP-2",
-          "G. Info",
-          "G. Finance",
-          "G. Industriel",
-          "G. BTP",
-          "G. Mécanique",
-          "G. Electrique",
-          "G. Energétique",
-        ].map((item, index) => (
-
-          // <div
-          //   key={index}
-          //   onClick={() => handleLevelFilter(item)}
-          //   className={`app__work-filter-item app__flex p-text ${
-          //     activeFilter === item ? "item-active" : ""
-          //   }`}
-          // >
-          //   {item}
-          // </div>
-
-        ))}
-      </div> */}
-
-      {/* <motion.div
+      <motion.div
         animate={animateCard}
         transition={{ duration: 0.4, delayChildren: 0.4 }}
-        className="app__work-portfolio"
+        className="app__levels-cards"
       >
-        {filterLevel.map((level, index) => (
-          <div className="app__work-item app__flex" key={index}>
-            
-            <div className="app__work-img app_flex">
-              <img src={level.imgUrl} alt={level.name} />
+        {modules.map((element) => {
+          const { name, prof, icon } = element;
+          return (
+            <div className="app__levels-card">
+              <div className="div-level">
+                <div className="level-ellipse"></div>
+                <img src={icon} alt={icon} className="app__levels-card-img" />
+              </div>
+              <div className="app__levels-card-text">
+                <h4 className="app__levels-card-text-name">{name}</h4>
+                <p className="app__levels-card-text-prof">{prof}</p>
+              </div>
             </div>
-
-            <div className="app__work-content app__flex">
-              <h4 className="bold-text app__work-content-title">
-                {level.title}
-              </h4>
-              <p
-                className="p-text app__work-content-prof"
-              >
-                {level.prof}
-              </p>
-            </div>
-          </div>
-        ))}
-      </motion.div> */}
+          );
+        })}
+      </motion.div>
     </div>
   );
 };
