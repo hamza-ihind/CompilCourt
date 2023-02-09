@@ -9,6 +9,7 @@ const Hero = () => (
   <div className="app__hero app__flex app__wrapper">
     <div className="ellipse"></div>
     <div className="ellipse-2"></div>
+
     <div className="app__hero-content">
       <div className="app__hero-tag">FSF Presents :</div>
       <h1 className="app__hero-title">Compil'Court</h1>

@@ -6,39 +6,11 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Contact.scss";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const { name, email, message } = formData;
-
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_0vmxz31",
-        "template_nj8ljez",
-        e.target,
-        "fHv_1o66YkbGxmYrr"
-      )
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
-  };
-
   return (
     <div className="app__contact">
+      <div className="ellipse-2"></div>
+      <div className="ellipse"></div>
+
       <h2 className="title-text">Love to hear from you, Get in touch!👋</h2>
 
       <div className="app__contact-cards">

@@ -40,14 +40,18 @@
     display: flex;
     gap: 3rem;
     margin-top: 3rem;
+
+    @media screen and (max-width: 400px) {
+      gap: 1rem;
+    }
   }
 }
 
 .ellipse {
   z-index: -1;
   position: absolute;
-  width: 65vw;
-  height: 65vw;
+  width: 50vw;
+  height: 50vw;
   left: 75vw;
   top: -10vw;
 
@@ -58,11 +62,44 @@
 .ellipse-2 {
   z-index: -1;
   position: absolute;
-  width: 65vw;
-  height: 65vw;
+  width: 50vw;
+  height: 50vw;
   left: -25vw;
   top: -25vw;
 
   background: #110541;
   filter: blur(200px);
+}
+
+// media Queries: Phone
+
+@media only screen and (max-width: 730px) {
+  .app__hero {
+    flex-direction: column;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-buttons {
+      margin: 0;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 12vw;
+    }
+
+    &-slogan {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &-img {
+      width: 60vw;
+    }
+  }
 }

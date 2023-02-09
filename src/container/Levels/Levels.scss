@@ -1,44 +1,63 @@
 .app__levels {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 80vw;
 
   &-title {
-    font-size: 2.8vw;
+    font-size: 2.2rem;
     font-weight: 500;
     color: white;
-    position: relative;
+    text-align: center;
+
+    span {
+      position: relative;
+    }
 
     .div-title {
       z-index: -1;
-      width: 29%;
+      width: 100%;
       height: 10px;
       background-color: var(--gray-color);
       position: absolute;
-      right: 8%;
+      right: 0;
       bottom: 12%;
     }
   }
 
   &-buttons {
-    margin: 3rem 0;
+    width: 90%;
+    margin: 2.5rem 0;
     display: flex;
-    gap: 3rem;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   &-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
-    width: 70vw;
+    width: 90%;
+
+    @media only screen and (max-width: 1080px) {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      gap: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &-card {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
-    border-radius: 20px;
+    padding: 1.2rem 1.8rem;
+    border-radius: 15px;
     transition: all 0.6s;
     cursor: pointer;
 
@@ -46,8 +65,9 @@
     color: white;
 
     &-img {
-      width: 100%;
+      width: 50px;
     }
+
     &-text {
       display: flex;
       flex-direction: column;
@@ -55,9 +75,10 @@
 
       &-name {
         max-width: fit-content;
-        font-size: 1.45vw;
+        font-size: 1.5vw;
         font-weight: 400;
       }
+
       &-prof {
         font-size: 1vw;
         font-weight: 200;
@@ -68,21 +89,91 @@
       transform: scale(1.05);
       box-shadow: 1px 2px 20px 5px rgba(69, 171, 254, 0.62);
     }
+
+    @media only screen and (max-width: 1080px) {
+      padding: 0.7rem 1.2rem;
+      &-img {
+        width: 7vw;
+      }
+
+      &-text {
+        &-name {
+          font-size: 2vw;
+        }
+        &-prof {
+          font-size: 1.5vw;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 720px) {
+      padding: 0.5rem 1rem;
+
+      &-img {
+        width: 6vw;
+      }
+
+      &-text {
+        &-name {
+          font-size: 2.2vw;
+        }
+        &-prof {
+          font-size: 1.6vw;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 0.8rem 1.4rem;
+
+      &-img {
+        width: 60px;
+      }
+
+      &-text {
+        &-name {
+          font-size: 1.4rem;
+        }
+        &-prof {
+          font-size: 0.85rem;
+        }
+      }
+    }
   }
-}
-
-.level-ellipse {
-  z-index: 10;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-
-  background: #168fe7;
-  filter: blur(37.5px);
 }
 
 .div {
   &-level {
     width: 25%;
+  }
+}
+
+.ellipse {
+  z-index: -1;
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  left: 75vw;
+  top: -8vw;
+
+  background: rgba(0, 70, 246, 0.152);
+  filter: blur(300px);
+}
+
+.ellipse-2 {
+  z-index: -1;
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  left: -25vw;
+  top: -25vw;
+
+  background: #11054187;
+  filter: blur(200px);
+}
+
+@media only screen and (max-width: 500px) {
+  .button-level {
+    padding: 0.5rem 1rem;
   }
 }

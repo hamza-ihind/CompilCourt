@@ -12,6 +12,7 @@
     &-side {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 2rem;
     }
 
@@ -19,6 +20,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: fit-content;
       position: relative;
 
       h3 {
@@ -26,18 +28,10 @@
         text-align: center;
         font-weight: 800;
       }
-      .div-title {
-        z-index: -1;
-        position: absolute;
-        bottom: 5px;
-        height: 10px;
-        width: 12rem;
-        background-color: var(--secondary-color);
-      }
     }
 
     &-text {
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 1.5rem;
     }
   }
@@ -56,17 +50,24 @@
       text-align: center;
 
       &-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        color: var(--primary-color);
       }
 
       &-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 200;
         letter-spacing: 0.3px;
       }
 
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       &-img {
-        width: 5.5rem;
+        width: 5.7rem;
         margin-bottom: 1.3rem;
       }
     }
@@ -76,19 +77,72 @@
 .ellipse {
   z-index: -1;
   position: absolute;
-  width: 65vw;
-  height: 65vw;
-  left: 35vw;
-  top: -5vw;
+  width: 50vw;
+  height: 50vw;
+  left: 75vw;
+  top: -8vw;
 
-  background: rgba(0, 69, 246, 0.4);
+  background: rgba(0, 70, 246, 0.272);
   filter: blur(300px);
+}
+
+.ellipse-2 {
+  z-index: -1;
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  left: -25vw;
+  top: -25vw;
+
+  background: #110541;
+  filter: blur(200px);
 }
 
 .v-line {
   border: 0;
   background-color: var(--secondary-color);
-  width: 10px;
-  height: 100%;
+  width: 9px;
+  height: 110%;
   border: round;
+}
+
+.div-title {
+  z-index: -1;
+  position: absolute;
+  bottom: 5px;
+  height: 10px;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.compil {
+  float: left;
+  margin-right: 1rem;
+  width: 8rem;
+}
+
+// media Queries
+
+@media screen and (max-width: 720px) {
+  .app__about {
+    &-content {
+      flex-direction: column;
+      &-side {
+        width: 100%;
+      }
+    }
+    &-stats {
+      flex-direction: column;
+      gap: 5rem;
+
+      &-card {
+        &-title {
+          font-size: 3rem;
+        }
+        &-text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

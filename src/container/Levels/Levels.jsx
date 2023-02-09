@@ -24,27 +24,43 @@ const Levels = () => {
   };
 
   return (
-    <div className="app__levels app__flex app__wrapper">
+    <div className="app__levels">
+      <div className="ellipse-2"></div>
+      <div className="ellipse"></div>
+
       <h2 className="app__levels-title">
         Pick your level and start{" "}
         <span style={{ color: "var(--secondary-color)", fontWeight: 700 }}>
-          WORKING!💪
+          WORKING!
           <div className="div-title"></div>
         </span>
+        💪
       </h2>
 
       <div className="app__levels-buttons">
-        <button className="button-stroke" onClick={() => filterLevel("S1")}>
-          Semestre 1
+        <button
+          className="button-stroke button-level"
+          onClick={() => filterLevel("S1")}
+        >
+          S1
         </button>
-        <button className="button-stroke" onClick={() => filterLevel("S2")}>
-          Semestre 2
+        <button
+          className="button-stroke button-level"
+          onClick={() => filterLevel("S2")}
+        >
+          S2
         </button>
-        <button className="button-stroke" onClick={() => filterLevel("S3")}>
-          Semestre 3
+        <button
+          className="button-stroke button-level"
+          onClick={() => filterLevel("S3")}
+        >
+          S3
         </button>
-        <button className="button-stroke" onClick={() => filterLevel("S4")}>
-          Semestre 4
+        <button
+          className="button-stroke button-level"
+          onClick={() => filterLevel("S4")}
+        >
+          S4
         </button>
       </div>
 
@@ -58,7 +74,7 @@ const Levels = () => {
           return (
             <div className="app__levels-card">
               <div className="div-level">
-                <div className="level-ellipse"></div>
+                <div className="overlay-ellipse"></div>
                 <img src={icon} alt={icon} className="app__levels-card-img" />
               </div>
               <div className="app__levels-card-text">

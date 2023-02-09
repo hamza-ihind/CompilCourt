@@ -236,11 +236,16 @@ button {
   border-radius: 1.5rem;
   font-size: 1.3vw;
   font-weight: 300;
+
+  @media screen and (max-width: 400px) {
+    padding: 0.6rem 1rem;
+  }
 }
 
 .button {
   &-main {
     border: 0;
+    font-size: 1rem;
     background-color: #85a3bf;
     color: black;
     font-weight: 200;
@@ -250,17 +255,36 @@ button {
     &:active {
       background-color: var(--primary-color);
     }
+
+    @media screen and (max-width: 400px) {
+      font-size: 4vw;
+    }
   }
 
   &-stroke {
+    font-size: 1rem;
     border: 2px solid var(--secondary-color);
     background: transparent;
     font-weight: 200;
     cursor: pointer;
     transition: all 0.3s;
-    &:hover,
-    &:active {
+    &:hover {
       background-color: var(--secondary-color);
     }
+    @media screen and (max-width: 400px) {
+      font-size: 4vw;
+    }
   }
+}
+
+// overlay decoration
+
+.overlay-ellipse {
+  z-index: 10;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+  background: #1690e77e;
+  filter: blur(37.5px);
 }
