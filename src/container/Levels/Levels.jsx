@@ -6,6 +6,7 @@ import { images } from "../../constants";
 
 import { Modules } from "../../constants/modules";
 import "./Levels.scss";
+import { Link } from "react-router-dom";
 
 const Levels = () => {
   const [modules, setModules] = useState([]);
@@ -72,16 +73,18 @@ const Levels = () => {
         {modules.map((element) => {
           const { name, prof, icon } = element;
           return (
-            <div className="app__levels-card">
-              <div className="div-level">
-                <div className="overlay-ellipse"></div>
-                <img src={icon} alt={icon} className="app__levels-card-img" />
+            <Link to="/module">
+              <div className="app__levels-card">
+                <div className="div-level">
+                  <div className="overlay-ellipse"></div>
+                  <img src={icon} alt={icon} className="app__levels-card-img" />
+                </div>
+                <div className="app__levels-card-text">
+                  <h4 className="app__levels-card-text-name">{name}</h4>
+                  <p className="app__levels-card-text-prof">{prof}</p>
+                </div>
               </div>
-              <div className="app__levels-card-text">
-                <h4 className="app__levels-card-text-name">{name}</h4>
-                <p className="app__levels-card-text-prof">{prof}</p>
-              </div>
-            </div>
+            </Link>
           );
         })}
       </motion.div>

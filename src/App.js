@@ -1,18 +1,29 @@
 import "./App.scss";
 
-import { About, Levels, Hero, Contact } from "./container";
-import { Navbar } from "./components";
+import HomePage from "./components/HomePage";
+import ModulePage from "./components/ModulePage";
+import Navbar from "./components/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Hero />
-      <About />
-      <Levels />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<HomePage />} />
+          <Route index element={<ModulePage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+{
+  /* <Navbar />
+      <Hero />
+      <About />
+      <Levels />
+      <Contact /> */
+}
