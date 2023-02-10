@@ -3,37 +3,49 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 
   .title-text {
     font-size: 2.2rem;
     font-weight: 500;
     color: white;
+    max-width: 80%;
   }
 
   &-cards {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    width: fit-content;
+    gap: 4rem;
     margin: 2.5rem 0 1rem 0;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-card {
     color: white;
     font-weight: 300;
+    width: 340px;
     font-size: 1rem;
     border: 2px solid #0075f6;
     border-radius: 20px;
-    width: fit-content;
     padding: 0.65rem 1.2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
+    white-space: nowrap;
 
     &-img {
       width: 35px;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 3.2vw;
+      width: 80vw;
     }
   }
 
@@ -55,13 +67,11 @@
       display: flex;
       justify-content: center;
       gap: 3rem;
-      width: 70%;
 
       &-card {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        width: 100%;
 
         &-text {
           margin-left: 6px;
@@ -78,8 +88,11 @@
           font-size: 1rem;
           font-weight: 200;
           font-family: "Outfit", sans-serif;
-          width: auto;
         }
+      }
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
       }
     }
 
@@ -104,7 +117,6 @@
           padding: 1rem;
           border-radius: 10px;
           height: 10rem;
-          width: 100%;
           background-color: #082a42;
           color: white;
           // font properties
@@ -117,6 +129,10 @@
           max-height: 12rem;
         }
       }
+
+      @media screen and (max-width: 900px) {
+        width: 90%;
+      }
     }
 
     &-button {
@@ -126,6 +142,10 @@
       font-weight: 400;
       font-size: 1rem;
       padding: 0.8rem 2rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      width: 110%;
     }
   }
 }

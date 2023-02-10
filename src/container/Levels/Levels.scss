@@ -47,7 +47,7 @@
 
     @media only screen and (max-width: 500px) {
       width: 100%;
-      gap: 1rem;
+      gap: 2rem;
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -151,10 +151,10 @@
 .ellipse {
   z-index: -1;
   position: absolute;
-  width: 50vw;
-  height: 50vw;
+  width: 40vw;
+  height: 40vw;
   left: 75vw;
-  top: -8vw;
+  top: -3vw;
 
   background: rgba(0, 70, 246, 0.152);
   filter: blur(300px);
