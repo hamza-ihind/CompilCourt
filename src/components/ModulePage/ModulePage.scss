@@ -1,0 +1,21 @@
+.app__module {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  &-title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  &-pdf {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+  }
+}

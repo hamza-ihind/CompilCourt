@@ -9,7 +9,7 @@ export const Modules = [
     icon: images.analyse,
   },
   {
-    name: "Algebre I",
+    name: "Algèbre I",
     prof: "Pr. Abdellah Bnouhachem",
     level: "S1",
     icon: images.analyse,
@@ -21,7 +21,7 @@ export const Modules = [
     icon: images.analyse,
   },
   {
-    name: "Magnetostatique",
+    name: "Magnétostatique",
     prof: "Pr. Abdelfattah Narjis",
     level: "S1",
     icon: images.analyse,
@@ -45,7 +45,7 @@ export const Modules = [
     icon: images.analyse,
   },
   {
-    name: "Algebre II",
+    name: "Algèbre II",
     prof: "Pr. Lahcen Taoufiq",
     level: "S2",
     icon: images.analyse,
@@ -102,7 +102,7 @@ export const Modules = [
     icon: images.analyse,
   },
   {
-    name: "Mecanique 2",
+    name: "Mécanique 2",
     prof: "Pr. Hamid Essabir",
     level: "S3",
     icon: images.analyse,
@@ -111,6 +111,43 @@ export const Modules = [
     name: "Electronique",
     prof: "Pr. Samira Chabaa",
     level: "S3",
+    icon: images.analyse,
+    link: "https://drive.google.com/file/d/1c4oreGC9qONHhFYgKMz3I-ujEzYz3rPJ/preview",
+  },
+  {
+    name: "Analyse 4",
+    prof: "Pr. Hicham Elboujaoui",
+    level: "S4",
+    icon: images.analyse,
+  },
+  {
+    name: "Programmation C",
+    prof: "Pr. Wissam Jenkal",
+    level: "S4",
+    icon: images.analyse,
+  },
+  {
+    name: "Electromagnétisme",
+    prof: "Pr. Abdellah Tihane",
+    level: "S4",
+    icon: images.analyse,
+  },
+  {
+    name: "Optique Physique",
+    prof: "Pr. Driss Agliz",
+    level: "S4",
+    icon: images.analyse,
+  },
+  {
+    name: "Les Probabilités",
+    prof: "Pr. Ghizlane Lakhnati",
+    level: "S4",
+    icon: images.analyse,
+  },
+  {
+    name: "D.A.O",
+    prof: "Pr. Lahoucine Belarche",
+    level: "S4",
     icon: images.analyse,
   },
 ];

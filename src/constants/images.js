@@ -16,6 +16,9 @@ import phone from "../assets/phone.png";
 import email from "../assets/email.png";
 import analyse from "../assets/analyse.png";
 
+//pdf
+import affichage from "../assets/pdf/affichage.pdf";
+
 export default {
   circle,
   logo,
@@ -29,4 +32,5 @@ export default {
   email,
   analyse,
   compil,
+  affichage,
 };

@@ -8,9 +8,10 @@ import { Modules } from "../../constants/modules";
 import "./Levels.scss";
 import { Link } from "react-router-dom";
 
-const Levels = () => {
+const Levels = (link) => {
   const [modules, setModules] = useState([]);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  link = Modules.link;
 
   const filterLevel = (level) => {
     setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -73,7 +74,7 @@ const Levels = () => {
         {modules.map((element) => {
           const { name, prof, icon } = element;
           return (
-            <Link to="/module">
+            <Link to={`/module/${name}`}>
               <div className="app__levels-card">
                 <div className="div-level">
                   <div className="overlay-ellipse"></div>
