@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="app__navbar">
         <div className="app__navbar-logo">
           <a href="#home">
-            <img src={images.logo} alt="Logo" />
+            <img src={images.COMPIL} alt="Logo" />
           </a>
         </div>
 

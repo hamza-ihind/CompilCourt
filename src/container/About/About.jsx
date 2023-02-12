@@ -19,7 +19,7 @@ const About = () => {
           </div>
           <p className="app__about-content-text">
             <img
-              src={images.compil}
+              src={images.Ccompil}
               alt="logo CompilCourt"
               className="compil"
             />

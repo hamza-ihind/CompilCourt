@@ -1,7 +1,10 @@
 import circle from "../assets/circle.svg";
 import logo from "../assets/Logo_Fsf.png";
 import pattern from "../assets/pattern.svg";
-import compil from "../assets/Compilcourt.png";
+import Ccompil from "../assets/Compilcourt.png";
+import FSF from "../assets/Logo_Fsf.png";
+import APPS from "../assets/Logo_Apps.png";
+import COMPIL from "../assets/Logo_Compil.png";
 
 // illustrations
 
@@ -31,6 +34,9 @@ export default {
   phone,
   email,
   analyse,
-  compil,
+  Ccompil,
   affichage,
+  FSF,
+  APPS,
+  COMPIL,
 };
