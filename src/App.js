@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<HomePage />} />
-          <Route path="/module/:name" element={<ModulePage />} />
+          <Route path="/module/:name/:id" element={<ModulePage />} />
         </Route>
       </Routes>
     </div>
@@ -19,11 +19,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Navbar />
-      <Hero />
-      <About />
-      <Levels />
-      <Contact /> */
-}

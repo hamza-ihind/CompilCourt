@@ -10,13 +10,18 @@ const Hero = () => (
     <div className="ellipse"></div>
     <div className="ellipse-2"></div>
 
-    <div className="app__hero-logos">
-      <img src={images.FSF} alt="Logo FSF" className="logo-head" />
-      <h3 style={{ marginLeft: 12 }}> AND </h3>
-      <img src={images.APPS} alt="Logo APPS" className="logo-head" />
-    </div>
+    <img src={images.FSF} alt="Logo FSF" className="logo-head logo-head-fsf" />
+    <img
+      src={images.APPS}
+      alt="Logo APPS"
+      className="logo-head logo-head-apps"
+    />
 
     <div className="app__hero-content">
+      <div className="app__hero-header">
+        <h3 className="app__hero-header-text">CLUB FSF x APPSCLUB present :</h3>
+      </div>
+
       <h1 className="app__hero-title">Compil'Court</h1>
 
       <h3 className="app__hero-slogan">

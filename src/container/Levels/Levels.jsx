@@ -72,9 +72,9 @@ const Levels = (link) => {
         className="app__levels-cards"
       >
         {modules.map((element) => {
-          const { name, prof, icon } = element;
+          const { id, name, prof, icon } = element;
           return (
-            <Link to={`/module/${name}`}>
+            <Link to={`/module/${name}/${id}`}>
               <div className="app__levels-card">
                 <div className="div-level">
                   <div className="overlay-ellipse"></div>

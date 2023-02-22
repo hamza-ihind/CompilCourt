@@ -4,18 +4,31 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
 
-  &-logos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+  .logo-head {
+    position: absolute;
+    width: 42%;
+    top: 0;
+    opacity: 40%;
+
+    &-fsf {
+      right: 82.5%;
+    }
+
+    &-apps {
+      left: 75%;
+    }
+  }
+
+  &-header {
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background-color: rgba(#542eec, 0.3);
     color: white;
-    width: 40%;
-
-    .logo-head {
-      width: 8rem;
+    &-text {
+      font-size: 1.2rem;
+      font-weight: 200;
     }
   }
 
