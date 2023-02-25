@@ -1,15 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { AppWrap, MotionWrap } from "../../wrapper";
+// import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Hero.scss";
 
 const Hero = () => (
-  <div className="app__hero app__flex app__wrapper">
-    <div className="ellipse"></div>
-    <div className="ellipse-2"></div>
-
+  <div className="app__hero">
     <img src={images.FSF} alt="Logo FSF" className="logo-head logo-head-fsf" />
     <img
       src={images.APPS}
@@ -19,7 +16,9 @@ const Hero = () => (
 
     <div className="app__hero-content">
       <div className="app__hero-header">
-        <h3 className="app__hero-header-text">CLUB FSF x APPSCLUB present :</h3>
+        <h3 className="app__hero-header-text">
+          AppsClub x Club FSF presents :
+        </h3>
       </div>
 
       <h1 className="app__hero-title">Compil'Court</h1>
@@ -42,4 +41,4 @@ const Hero = () => (
   </div>
 );
 
-export default AppWrap(MotionWrap(Hero, "app__hero"), "hero", "app__primarybg");
+export default Hero;

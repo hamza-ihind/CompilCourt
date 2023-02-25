@@ -2,15 +2,12 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 
 import { images } from "../../constants";
-import { AppWrap, MotionWrap } from "../../wrapper";
+// import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <div className="app__contact">
-      <div className="ellipse-2"></div>
-      <div className="ellipse"></div>
-
+    <div className="app__contact app__wrapper">
       <h2 className="title-text">Love to hear from you, Get in touch!👋</h2>
 
       <div className="app__contact-cards">
@@ -67,8 +64,4 @@ const Contact = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Contact, "app__contact"),
-  "contact",
-  "app__primarybg"
-);
+export default Contact;

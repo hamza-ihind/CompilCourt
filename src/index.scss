@@ -23,14 +23,64 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-base);
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button {
+  &-toggle {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.3rem 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    color: white;
+  }
+
+  &-main {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    border: 0;
+    background-color: #85a3bf;
+    color: black;
+    font-weight: 600;
+
+    &:hover,
+    &:active {
+      background-color: var(--primary-color);
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 4vw;
+    }
+  }
+
+  &-stroke {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    font-weight: 600;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 4vw;
+    }
+  }
 }

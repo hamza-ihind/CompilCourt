@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  height: 100vh;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &-title {
     font-size: 2.2rem;

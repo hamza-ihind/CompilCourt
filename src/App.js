@@ -1,17 +1,23 @@
-import "./App.scss";
-
-import HomePage from "./components/HomePage";
-import ModulePage from "./components/ModulePage/ModulePage";
-import Navbar from "./components/Navbar/Navbar";
+import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 
+import "./App.scss";
+
+import Homepage from "./pages/Homepage/Homepage";
+import Modulepage from "./pages/Modulepage/Modulepage";
+import Navbar from "./components/Navbar/Navbar";
+
+import { ThemeModeContext } from "./contexts/ThemeModeContext";
+
 function App() {
+  const { isDarkModeActive } = useContext(ThemeModeContext);
+
   return (
-    <div className="app">
+    <div className={isDarkModeActive ? "App dark" : "App light"}>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index element={<HomePage />} />
-          <Route path="/module/:name/:id" element={<ModulePage />} />
+          <Route index element={<Homepage />} />
+          <Route path="/module/:name/:id" element={<Modulepage />} />
         </Route>
       </Routes>
     </div>

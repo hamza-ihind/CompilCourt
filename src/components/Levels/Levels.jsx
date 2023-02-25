@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { AppWrap, MotionWrap } from "../../wrapper";
+// import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
 
 import { Modules } from "../../constants/modules";
@@ -26,10 +26,7 @@ const Levels = (link) => {
   };
 
   return (
-    <div className="app__levels">
-      <div className="ellipse-2"></div>
-      <div className="ellipse"></div>
-
+    <div className="app__levels app__flex">
       <h2 className="app__levels-title">
         Pick your level and start{" "}
         <span style={{ color: "var(--secondary-color)", fontWeight: 700 }}>
@@ -93,8 +90,4 @@ const Levels = (link) => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Levels, "app__levels"),
-  "levels",
-  "app__primarybg"
-);
+export default Levels;

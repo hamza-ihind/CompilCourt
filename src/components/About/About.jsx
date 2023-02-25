@@ -1,16 +1,14 @@
 // import { useState, useEffect } from 'react'
 
 import { motion } from "framer-motion";
-import { AppWrap, MotionWrap } from "../../wrapper";
+// import { MotionWrap } from "../../wrapper";
 import "./About.scss";
 
 import { images } from "../../constants";
 
 const About = () => {
   return (
-    <div className="app__about app__flex app__wrapper">
-      <div className="ellipse-2"></div>
-      <div className="ellipse"></div>
+    <div className="app__about app__wrapper">
       <div className="app__about-content">
         <div className="app__about-content-side">
           <div className="app__about-content-title">
@@ -31,7 +29,7 @@ const About = () => {
             wonderful resource. Compil'Court is here to help you succeed!
           </p>
         </div>
-        <hr className="v-line" />
+        {/* <hr className="v-line" /> */}
         <div className="app__about-content-side">
           <div className="app__about-content-title">
             <h3>Our Values</h3>
@@ -109,8 +107,4 @@ const About = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(About, "app__about"),
-  "about",
-  "app__primarybg"
-);
+export default About;
