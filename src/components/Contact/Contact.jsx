@@ -10,7 +10,7 @@ const Contact = () => {
     <div className="app__contact app__wrapper">
       <h2 className="title-text">Love to hear from you, Get in touch!👋</h2>
 
-      <div className="app__contact-cards">
+      {/* <div className="app__contact-cards">
         <div className="app__contact-card">
           <img
             src={images.email}
@@ -25,7 +25,7 @@ const Contact = () => {
             Avenue Tamessoult, Agadir 80000
           </p>
         </div>
-      </div>
+      </div> */}
 
       <form action="" className="app__contact-form">
         {/* up side */}

@@ -5,11 +5,12 @@
   justify-content: center;
   position: relative;
   height: 100vh;
+  padding-top: 3rem;
 
   .logo-head {
     position: absolute;
     width: 42%;
-    top: 10%;
+    top: 10vh;
     opacity: 40%;
 
     &-fsf {
@@ -18,6 +19,14 @@
 
     &-apps {
       left: 75%;
+    }
+
+    @media screen and (max-width: 800px) {
+      top: 25vh;
+    }
+
+    @media screen and (max-width: 800px) {
+      visibility: hidden;
     }
   }
 
@@ -45,7 +54,7 @@
   }
 
   &-slogan {
-    font-size: 1.75rem;
+    font-size: 2.25vw;
     font-weight: 400;
     padding: 1.5rem 0 2.5rem 0;
   }
@@ -54,8 +63,8 @@
     display: flex;
     gap: 1rem;
 
-    @media screen and (max-width: 400px) {
-      gap: 1rem;
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
     }
   }
 }
@@ -86,7 +95,7 @@
 
 // media Queries: Phone
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 768px) {
   .app__hero {
     &-content {
       display: flex;
@@ -105,8 +114,39 @@
     }
 
     &-slogan {
-      font-size: 1.5rem;
+      width: 80%;
+      font-size: 1.2rem;
       text-align: center;
+    }
+
+    &-img {
+      width: 60vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .app__hero {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-header {
+      padding: 0.5rem 2rem;
+      border-radius: 15px;
+      background-color: rgba(#542eec, 0.3);
+      width: 80%;
+      text-align: center;
+      &-text {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    &-title {
+      font-size: 12vw;
     }
 
     &-img {

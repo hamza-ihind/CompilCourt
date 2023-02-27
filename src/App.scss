@@ -1,3 +1,9 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .light {
   background-color: var(--primary-color);
   color: black;

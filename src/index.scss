@@ -48,14 +48,17 @@ button {
   }
 
   &-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 10rem;
     height: 3rem;
     border-radius: 16px;
     font-size: 1.1rem;
     border: 0;
-    background-color: #85a3bf;
-    color: black;
-    font-weight: 600;
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: 500;
 
     &:hover,
     &:active {
@@ -65,20 +68,33 @@ button {
     @media screen and (max-width: 400px) {
       font-size: 4vw;
     }
+
+    &.dark {
+      background-color: var(--primary-color);
+      color: black;
+    }
   }
 
   &-stroke {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 10rem;
     height: 3rem;
     border-radius: 16px;
     font-size: 1.1rem;
     border: 2px solid var(--secondary-color);
     background: transparent;
-    font-weight: 600;
+    font-weight: 500;
 
     &:hover {
       background-color: var(--secondary-color);
     }
+
+    &.dark {
+      color: white;
+    }
+
     @media screen and (max-width: 400px) {
       font-size: 4vw;
     }

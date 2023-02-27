@@ -17,7 +17,15 @@ import idea from "../assets/idea.png";
 import map from "../assets/map.png";
 import phone from "../assets/phone.png";
 import email from "../assets/email.png";
-import analyse from "../assets/analyse.png";
+
+// modules
+import analyse from "../assets/modules/analyse.png";
+import proba from "../assets/modules/proba.png";
+import thermo from "../assets/modules/thermo.png";
+import algebre from "../assets/modules/algebre.png";
+import chimie from "../assets/modules/chimie.png";
+import elcetronique from "../assets/modules/electronique.png";
+import info from "../assets/modules/info.png";
 
 //pdf
 import affichage from "../assets/pdf/affichage.pdf";
@@ -39,4 +47,10 @@ export default {
   FSF,
   APPS,
   COMPIL,
+  proba,
+  elcetronique,
+  chimie,
+  algebre,
+  thermo,
+  info,
 };

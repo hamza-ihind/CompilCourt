@@ -20,7 +20,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S1",
-    icon: images.analyse,
+    icon: images.algebre,
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S1",
-    icon: images.analyse,
+    icon: images.info,
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S2",
-    icon: images.analyse,
+    icon: images.algebre,
   },
   {
     id: 8,
@@ -110,7 +110,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S2",
-    icon: images.analyse,
+    icon: images.info,
   },
 
   {
@@ -121,7 +121,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S2",
-    icon: images.analyse,
+    icon: images.chimie,
   },
 
   // Deuxième année
@@ -143,7 +143,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S3",
-    icon: images.analyse,
+    icon: images.algebre,
   },
   {
     id: 14,
@@ -153,7 +153,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S3",
-    icon: images.analyse,
+    icon: images.thermo,
   },
   {
     id: 15,
@@ -183,7 +183,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S3",
-    icon: images.analyse,
+    icon: images.elcetronique,
   },
   {
     id: 18,
@@ -203,7 +203,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S4",
-    icon: images.analyse,
+    icon: images.info,
   },
   {
     id: 20,
@@ -233,7 +233,7 @@ export const Modules = [
     td: "hamza td",
     ds: "hamza ds",
     level: "S4",
-    icon: images.analyse,
+    icon: images.proba,
   },
   {
     id: 23,

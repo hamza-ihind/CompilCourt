@@ -1,0 +1,122 @@
+// .app__card {
+//   background-color: white;
+//   color: black;
+//   padding: 1rem 2rem;
+//   white-space: nowrap;
+//   border-radius: 15px;
+//   border: black solid 1px;
+// }
+
+.app__card {
+  &-item {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--dark-color);
+    color: white;
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 470px;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      width: 50%;
+      margin: 1rem;
+    }
+
+    &.dark {
+      background-color: var(--primary-color);
+      color: black;
+    }
+  }
+
+  &-img {
+    width: 55%;
+
+    &.dark {
+      filter: brightness(0) saturate(100%) invert(0%) sepia(92%) saturate(7498%)
+        hue-rotate(121deg) brightness(90%) contrast(100%);
+    }
+
+    @media screen and (min-width: 2000px) {
+      height: 350px;
+    }
+  }
+
+  &-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #fff;
+
+      margin: 1rem;
+      font-family: var(--font-base);
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      svg {
+        width: 60%;
+        height: 60%;
+        color: var(--white-color);
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    &.dark {
+      h2 {
+        font-weight: 400;
+      }
+    }
+  }
+}
