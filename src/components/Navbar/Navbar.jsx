@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <ul className="app__navbar-links">
-          {["hero", "about", "levels", "contact"].map((item) => (
+          {["home", "about", "explore", "contact"].map((item) => (
             <li key={`link-${item}`}>
               <a
                 className={
@@ -53,7 +53,7 @@ const Navbar = () => {
                     ? "app__navbar-link dark"
                     : "app__navbar-link"
                 }
-                href={`#${item}`}
+                href={`./#${item}`}
               >
                 {item}
               </a>
@@ -80,7 +80,7 @@ const Navbar = () => {
               <ul>
                 {["hero", "about", "levels", "contact"].map((item) => (
                   <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    <a href={`./#${item}`} onClick={() => setToggle(false)}>
                       {item}
                     </a>
                   </li>

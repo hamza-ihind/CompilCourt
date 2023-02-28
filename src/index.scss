@@ -71,6 +71,7 @@ button {
 
     &.dark {
       background-color: var(--primary-color);
+      font-weight: 400;
       color: black;
     }
   }
@@ -92,6 +93,7 @@ button {
     }
 
     &.dark {
+      font-weight: 400;
       color: white;
     }
 

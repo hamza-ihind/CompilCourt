@@ -18,17 +18,27 @@ import map from "../assets/map.png";
 import phone from "../assets/phone.png";
 import email from "../assets/email.png";
 
-// modules
-import analyse from "../assets/modules/analyse.png";
-import proba from "../assets/modules/proba.png";
-import thermo from "../assets/modules/thermo.png";
-import algebre from "../assets/modules/algebre.png";
-import chimie from "../assets/modules/chimie.png";
-import elcetronique from "../assets/modules/electronique.png";
-import info from "../assets/modules/info.png";
+// Modules Light
+import analyse_light from "../assets/modules/light/analyse-light.png";
+import proba_light from "../assets/modules/light/proba-light.png";
+import thermo_light from "../assets/modules/light/thermo-light.png";
+import algebre_light from "../assets/modules/light/algebre-light.png";
+import chimie_light from "../assets/modules/light/chimie-light.png";
+import elcetronique_light from "../assets/modules/light/electronique-light.png";
+import info_light from "../assets/modules/light/info-light.png";
 
-//pdf
-import affichage from "../assets/pdf/affichage.pdf";
+// Modules Dark
+import elcetronique_dark from "../assets/modules/dark/electronique-dark.png";
+import info_dark from "../assets/modules/dark/info-dark.png";
+import analyse_dark from "../assets/modules/dark/analyse-dark.png";
+import proba_dark from "../assets/modules/dark/proba-dark.png";
+import thermo_dark from "../assets/modules/dark/thermo-dark.png";
+import algebre_dark from "../assets/modules/dark/algebre-dark.png";
+import chimie_dark from "../assets/modules/dark/chimie-dark.png";
+
+//blobs
+import blob1 from "../assets/blobs/blob1.svg";
+import blob2 from "../assets/blobs/blob2.svg";
 
 export default {
   circle,
@@ -41,16 +51,24 @@ export default {
   map,
   phone,
   email,
-  analyse,
+  analyse_light,
+  analyse_dark,
   Ccompil,
-  affichage,
   FSF,
   APPS,
   COMPIL,
-  proba,
-  elcetronique,
-  chimie,
-  algebre,
-  thermo,
-  info,
+  proba_light,
+  proba_dark,
+  elcetronique_light,
+  elcetronique_dark,
+  chimie_light,
+  chimie_dark,
+  algebre_light,
+  algebre_dark,
+  thermo_light,
+  thermo_dark,
+  info_light,
+  info_dark,
+  blob1,
+  blob2,
 };

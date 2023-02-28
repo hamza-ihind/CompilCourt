@@ -98,6 +98,8 @@
   float: left;
   margin-right: 1rem;
   width: 8rem;
+  filter: brightness(50%) contrast(200%) hue-rotate(38deg) saturate(145%)
+    sepia(17%);
 }
 
 // media Queries

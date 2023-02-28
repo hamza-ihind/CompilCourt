@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./Card.scss";
 import { ThemeModeContext } from "../../contexts/ThemeModeContext";
 
-const Card = ({ name, prof, id, icon, link }) => {
+const Card = ({ name, prof, id, light, dark, link }) => {
   const { isDarkModeActive } = useContext(ThemeModeContext);
   return (
     <>
@@ -16,8 +16,8 @@ const Card = ({ name, prof, id, icon, link }) => {
         to={`/module/${name}/${id}`}
       >
         <img
-          className={isDarkModeActive ? "app__card-img dark" : "app__card-img"}
-          src={icon}
+          className="app__card-img"
+          src={isDarkModeActive ? dark : light}
           alt={name}
         />
 

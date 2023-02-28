@@ -10,7 +10,7 @@ const Hero = () => {
   const { isDarkModeActive } = useContext(ThemeModeContext);
 
   return (
-    <div className="app__hero">
+    <div id="home" className="app__hero">
       <img
         src={images.FSF}
         alt="Logo FSF"

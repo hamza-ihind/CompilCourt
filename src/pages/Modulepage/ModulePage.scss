@@ -1,15 +1,75 @@
 .app__module {
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+  padding-top: 10rem;
+  gap: 4rem;
+  position: relative;
+
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80%;
+  }
 
   &-title {
-    color: var(--primary-color);
-    font-size: 3rem;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
+    position: relative;
+    font-size: 2.7rem;
+
+    h1 {
+      text-align: center;
+      font-weight: 800;
+      z-index: 3;
+    }
+
+    .div-title {
+      z-index: 1;
+      position: absolute;
+      bottom: 17px;
+      height: 15px;
+      width: 100%;
+      background-color: var(--secondary-color);
+    }
+  }
+
+  &-document {
+    overflow: hidden;
+    width: 90%;
+    height: 150vh;
+    margin-bottom: 5rem;
+    border: var(--secondary-color) inset 10px;
+    embed {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.blob1 {
+  position: absolute;
+  width: 45%;
+  left: -15%;
+  mix-blend-mode: soft-light;
+}
+
+.blob2 {
+  position: absolute;
+  width: 45%;
+  top: -10%;
+  right: -15%;
+  mix-blend-mode: soft-light;
+}
+
+@media screen and (max-width: 760px) {
+  .blob1,
+  .blob2 {
+    visibility: hidden;
   }
 }

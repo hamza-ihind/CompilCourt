@@ -7,7 +7,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <div className="app__contact app__wrapper">
+    <div id="contact" className="app__contact app__wrapper">
       <h2 className="title-text">Love to hear from you, Get in touch!👋</h2>
 
       {/* <div className="app__contact-cards">

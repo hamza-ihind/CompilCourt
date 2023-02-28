@@ -10,7 +10,7 @@ import Stat from "../Stat/Stat";
 const About = () => {
   return (
     // <div className="app__about">
-    <div className="app__about-content">
+    <div id="about" className="app__about-content">
       <div className="app__about-content-side">
         <div className="app__about-content-title">
           <h3>Our mission</h3>

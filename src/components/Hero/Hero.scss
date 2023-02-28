@@ -69,30 +69,6 @@
   }
 }
 
-.ellipse {
-  z-index: -1;
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  left: 75vw;
-  top: -10vw;
-
-  background: rgba(0, 69, 246, 0.4);
-  filter: blur(300px);
-}
-
-.ellipse-2 {
-  z-index: -1;
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  left: -25vw;
-  top: -25vw;
-
-  background: #110541;
-  filter: blur(200px);
-}
-
 // media Queries: Phone
 
 @media only screen and (max-width: 768px) {

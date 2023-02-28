@@ -29,7 +29,7 @@ const Levels = (link) => {
     }, 420);
   };
   return (
-    <div className="app__levels">
+    <div id="explore" className="app__levels">
       <h2 className="app__levels-title">
         Pick your level and start{" "}
         <span style={{ color: "var(--secondary-color)", fontWeight: 700 }}>
@@ -88,13 +88,14 @@ const Levels = (link) => {
         className="app__levels-cards"
       >
         {modules.map((element) => {
-          const { id, name, prof, icon } = element;
+          const { id, name, prof, light, dark } = element;
           return (
             <Card
               name={name}
               prof={prof}
               id={id}
-              icon={icon}
+              light={light}
+              dark={dark}
               className="app__levels-cards-item"
             />
           );
