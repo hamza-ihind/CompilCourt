@@ -54,8 +54,8 @@
   }
 
   &-slogan {
-    font-size: 2.25vw;
-    font-weight: 400;
+    font-size: 1.75vw;
+    font-weight: 100;
     padding: 1.5rem 0 2.5rem 0;
   }
 
@@ -129,4 +129,12 @@
       width: 60vw;
     }
   }
+}
+
+.pattern-one {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
 }

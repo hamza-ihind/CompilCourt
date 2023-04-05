@@ -5,6 +5,7 @@
   align-items: center;
   padding: 1.2rem 8rem;
   backdrop-filter: blur(7.5px);
+  background-color: transparent;
   position: fixed;
   z-index: 15;
 
@@ -45,10 +46,11 @@
     font-size: 1.1rem;
     text-decoration: none;
     flex-direction: column;
-    color: var(--dark-color);
+    background-color: transparent;
+    color: var(--gray-color);
     transition: all 0.3s ease-in-out;
     &:hover {
-      color: var(--third-color);
+      color: var(--secondary-color);
     }
 
     &.dark {

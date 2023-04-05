@@ -30,6 +30,9 @@ const Levels = (link) => {
   };
   return (
     <div id="explore" className="app__levels">
+      <img src={images.blob1} alt="blob1" className="blob1" />
+      <img src={images.blob2} alt="blob1" className="blob2" />
+
       <h2 className="app__levels-title">
         Pick your level and start{" "}
         <span style={{ color: "var(--secondary-color)", fontWeight: 700 }}>

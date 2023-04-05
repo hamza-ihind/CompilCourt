@@ -9,6 +9,7 @@ import COMPIL from "../assets/Logo_Compil.png";
 // illustrations
 
 import hero from "../assets/hero.svg";
+import test from "../assets/test.png";
 
 // icons
 import write from "../assets/write.png";
@@ -71,4 +72,5 @@ export default {
   info_dark,
   blob1,
   blob2,
+  test,
 };

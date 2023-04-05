@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="app__hero-title">Compil'Court</h1>
 
         <h3 className="app__hero-slogan">
-          Your personal study program starts here!
+          Your personal study program starts HERE!
         </h3>
 
         <div className="app__hero-buttons">
